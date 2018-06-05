@@ -1,0 +1,149 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body, html {
+    height: 100%;
+}
+h1 {
+    padding: 10px;
+}
+ol, ul {
+    list-style: none;
+}
+html {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family:SIMPLIFICA;
+    src:url(/assets/font/simplifica.ttf);
+    /* src:url(/assets/fonts/lineto-lettera-pro-light.eot?#iefix) format("embedded-opentype"),url(/assets/fonts/lineto-lettera-pro-light.woff) format("woff"),url(/assets/fonts/lineto-lettera-pro-light.ttf) format("truetype"),url(/assets/fonts/lineto-lettera-pro-light.svg#LetteraProLight) format("svg"); */
+    font-weight:400;
+    font-style:normal
+}
+html {
+    font-family: LetteraProLight,monospace;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1.7px;
+}
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+#main, #root {
+    height: 100%;
+}
+#root {
+    position: relative;
+    min-width: 1000px;
+}
+.dataBox {
+    table-layout: fixed;
+    margin-left: 3rem;
+}
+.dataBox-row {
+    clear: left;
+}
+.dataBox-cell {
+    margin-left: 15%;
+    text-transform: uppercase;
+}
+.dataBox-cell:first-child {
+    clear: left;
+    float: left;
+    padding-right: 10px;
+    width: 15%;
+    margin-left: 0;
+}
+.sessionBox {
+    font-size: .75rem;
+    line-height: 1.642;
+}
+footer {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.25rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.2);
+    background: rgba(0,0,0,.3);
+    text-transform: uppercase;
+    font-size: .75rem;
+    overflow: hidden;
+}
+footer div {
+    float: left;
+    width: 20%;
+    height: 100%;
+    line-height: 2.25rem;
+    margin: 0;
+}
+footer div.featured {
+    width: 60%;
+    text-align: left;
+}
+.introForm {
+    position: relative;
+    top: 35%;
+    width: 80%;
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: .875rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #000;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: -webkit-transform .75s cubic-bezier(.165,.015,0,.965),opacity .5s ease-in-out;
+    transition: transform .75s cubic-bezier(.165,.015,0,.965),opacity .5s ease-in-out;
+}
+/* .introForm-entry {
+    margin-bottom: 2.631578947em;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: opacity .5s ease-in-out;
+} */
+.introForm-answer, .introForm-question {
+    position: relative;
+    padding: 0 0 0 25px;
+    opacity: 0;
+    -webkit-transform: translate(0,40px);
+    transform: translate(0,40px);
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+    transition: -webkit-transform .4s ease-out,opacity .4s ease-in-out;
+    transition: transform .4s ease-out,opacity .4s ease-in-out;
+    transition-delay: 0s, 0s;
+}
+.introForm-answer.visible, .introForm-question.visible {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.introForm-question {
+    margin-bottom: 1.052631579em;
+    transition-delay: .85s;
+}
+.introForm-arrow {
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+}
+/* .appear-footer {
+    -webkit-animation: fadeIn .7s ease-out;
+    animation: fadeIn .7s ease-out;
+} */

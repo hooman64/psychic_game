@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Psychic Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="root">
+            <h1>Results:</h1>
+
+            <ul class="dataBox sessionBox">
+                <li class="dataBox-row">
+                    <div class="dataBox-cell">Wins:</div>
+                    <div class="dataBox-cell">
+                        <div id='wins'>0</div>
+                    </div>
+                </li>
+                <li class="dataBox-row">
+                    <div class="dataBox-cell">Losses:</div>
+                    <div class="dataBox-cell">
+                        <div id='losses'>0</div>
+                    </div>
+                </li>
+                <li class="dataBox-row">
+                    <div class="dataBox-cell">Guesses Left:</div>
+                    <div class="dataBox-cell">
+                        <div id='guesscount'>9</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="introForm">
+                <div class="introForm-entry">
+                    <div class="introForm-question visible">
+                        <div class="introForm-arrow">&gt;</div>
+                        <div class="introForm-line">
+                            <p>
+                                Hello.</br>
+                                I'd like to play a game.</br>
+                                Let's see if you can guess the letter I'm thinking of.
+                            </p>
+                        </div>
+                        <div class="introForm-line">
+                            <p>What’s your guess?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="appear-footer">
+            <div>Guesses so far:</div>
+            <div class="featured">
+                <div id='guesses'></div>
+            </div>
+        </footer>            
+    </div>
+    
+</body>
+</html>
