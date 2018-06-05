@@ -6,12 +6,11 @@ var wins = 0;
 var losses = 0;
 var guesscount = 9;
 
-// For Computer Random Letter Assignment (wouldn't change on every run - moved to function)
+// For Computer Random Letter Assignment
 var randlet = alphabet[Math.floor(Math.random()*alphabet.length)];
 
 // For Keypress Guesses
 document.onkeypress = function(event) {
-    // For Computer Random Letter Assignment
     var tries = event.key;
 
     if(tries == randlet){
